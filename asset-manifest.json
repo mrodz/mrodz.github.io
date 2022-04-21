@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7b805a9c.css",
+    "main.js": "/static/js/main.0cf581af.js",
+    "static/media/spinning-loading.gif": "/static/media/spinning-loading.24b933aad9bad942fb6f.gif",
+    "static/media/gluten-free.png": "/static/media/gluten-free.593dc192af4c2d679837.png",
+    "index.html": "/index.html",
+    "main.7b805a9c.css.map": "/static/css/main.7b805a9c.css.map",
+    "main.0cf581af.js.map": "/static/js/main.0cf581af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b805a9c.css",
+    "static/js/main.0cf581af.js"
+  ]
+}
