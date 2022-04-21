@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// todo
 export default function NotFound() {
     return (
         <div>

@@ -6,12 +6,16 @@ function Tooltip(props) {
     // console.log(props.children);
     const text = props.text;
 
+    const defaultStyle = {
+        fontSize: '1rem'
+    };
+
     return (
-        <div className="tooltip">
+        <div className={`tooltip ${props.top ? 'top-tooltip' : 'bottom-tooltip'}`}>
             <div data-content>
                 {element}
             </div>
-            <div data-text>
+            <div data-text style={props.defaultStyle ? defaultStyle : {}}>
                 {text}
             </div>
         </div>

@@ -5,11 +5,10 @@ const key = require('./API_SECRET.json'); // hidden in .gitignore
 
 export default function Map() {
     const [loaded, setLoaded] = useState(false);
-    console.log(key);
     return (
         <div className='map-wrapper'>
             <div className='map-title'>
-                Our Location
+                Visit Us
             </div>
             <iframe
                 className={`map ${!loaded ? 'map-loading' : ''}`}

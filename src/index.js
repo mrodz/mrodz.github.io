@@ -4,12 +4,6 @@ import './index.css';
 import App from './components/App/App';
 import { BrowserRouter } from 'react-router-dom';
 
-require('react-dom');
-window.React2 = require('react');
-if (window.React1 === window.React2) {
-  alert('there are multiple instances of React installed! hooks will not work.');
-}
-
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

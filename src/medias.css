@@ -1,0 +1,85 @@
+
+@media only screen and (max-width: 1320px) {
+    .landing-description {
+        font-size: 300%;
+    }
+    
+    .landing-button {
+        font-size: 105%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .name-items {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    .name-items {
+        font-size: 60%;
+    }
+
+    .food-card {
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .menu-option {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 745px) {
+    .central-portion {
+        display: none;
+    }
+    .name-items {
+        font-size: 65%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .landing-description {
+        font-size: 200%;
+    }
+
+    .landing-button {
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .landing-description {
+        font-size: 150%;
+    }
+
+    .last-portion {
+        display: none;
+    }
+
+    .name-items {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .landing-button {
+        padding: .7rem;
+        border-radius: 10px;
+    }
+
+    .name-items {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .name-items {
+        font-size: 120%;
+    }
+    .extra-name {
+        display: none;
+    }
+}

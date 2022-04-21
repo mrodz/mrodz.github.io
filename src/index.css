@@ -10,6 +10,7 @@ body {
 html {
   background-color: rgb(246, 236, 218);
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
 }
 
 code {

@@ -2,6 +2,7 @@ import { useState } from "react";
 import FoodCard from "../FoodCard/FoodCard";
 import Title from "../Title/Title";
 import './Menu.css';
+import '../../medias.css';
 
 const menuObj = require('../../menu.json');
 
