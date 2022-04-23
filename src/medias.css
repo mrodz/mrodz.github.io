@@ -1,3 +1,24 @@
+/* @media only screen and (width >= 2500px) {
+    html {
+        font-size: 250%;
+    }
+}
+
+@media only screen and (width >= 1500px) {
+    html {
+        font-size: 150%;
+    }
+    .logo {
+        height: 78px;
+        width: 98px;
+    }
+} */
+
+@media only screen and (min-width: 2000px) {
+    html {
+        font-size: 200%;
+    }
+}
 
 @media only screen and (max-width: 1320px) {
     .landing-description {
@@ -32,7 +53,7 @@
 }
 
 @media only screen and (max-width: 745px) {
-    .central-portion {
+    [data-establishment-text] {
         display: none;
     }
     .name-items {
@@ -55,7 +76,7 @@
         font-size: 150%;
     }
 
-    .last-portion {
+    [data-location-text] {
         display: none;
     }
 
@@ -79,7 +100,7 @@
     .name-items {
         font-size: 120%;
     }
-    .extra-name {
+    [data-tratorria-text] {
         display: none;
     }
 }

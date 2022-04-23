@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+.landing-wrapper-all {
+    display: flex;
+    flex-direction: column;
+}
+
+/***************/
+/* TOP SECTION */
+/***************/
 .landing-description {
     font-size: 450%;
     font-family: 'Lobster', cursive;
@@ -48,38 +56,6 @@
     text-align: center;
 }
 
-@keyframes landing-button-to-white {
-    100% {
-        background-color: rgb(253, 249, 249);
-        border: solid #000 3px;
-    }
-}
-
-.landing-top-wrapper {
-    /* margin-bottom: 1; */
-    background-image: url('https://10619-2.s.cdn12.com/rests/original/506_503860889.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 3rem;
-    
-    height: 60vh;
-    /* min-width: 100vw; */
-    /* margin-top: 5rem; */
-}
-
-.landing-wrapper-all {
-    display: flex;
-    flex-direction: column;
-    /* display: grid; */
-    /* grid-template-rows: 60vh 1rem; */
-}
-
-.landing-middle-wrapper {
-    border-bottom: solid #D9594C 10px;
-    border-top: solid #D9594C 10px;
-    padding: 3rem;
-}
-
 .landing-button-selected {
     animation: landing-button-to-white 1s forwards;
 }
@@ -91,7 +67,7 @@
 }
 
 .landing-button:nth-child(2) {
-    background-color: #CE8D66;
+    background-color: #ebded6;
     margin-left: auto;
     margin-right: auto;
 }
@@ -100,4 +76,44 @@
     background-color: #e55934;
     margin-left: 1rem;
     margin-right: auto;
+}
+
+@keyframes landing-button-to-white {
+    100% {
+        background-color: rgb(253, 249, 249);
+        border: solid #000 3px;
+    }
+}
+
+.landing-top-wrapper {
+    /* margin-bottom: 1; */
+    background-image: url('./landing_bg_TEMP.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 3rem;
+    
+    height: 60vh;
+    /* min-width: 100vw; */
+    /* margin-top: 5rem; */
+}
+
+/******************/
+/* MIDDLE SECTION */
+/******************/
+.landing-middle-wrapper {
+    border-bottom: solid #D9594C 10px;
+    border-top: solid #D9594C 10px;
+    padding: 3rem;
+}
+
+/*****************/
+/* MAP & REVIEWS */
+/*****************/
+.landing-reviews-map {
+    margin: 3rem;
+}
+
+.reviews-map-splitter {
+    display: flex;
+    flex-direction: row;
 }

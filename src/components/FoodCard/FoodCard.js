@@ -1,5 +1,6 @@
 import FoodProperties from '../FoodProperties/FoodProperties';
-import './FoodCard.css'
+import './FoodCard.css';
+import '../../medias.css';
 
 function FoodCard(props) {
     // style={{ animation: `fade-in-card .6s ${.3 * props.index}s forwards` }}
