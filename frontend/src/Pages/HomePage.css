@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.landing-wrapper-all {
+    display: flex;
+    flex-direction: column;
+}
+
+/***************/
+/* TOP SECTION */
+/***************/
+.landing-description {
+    font-size: 450%;
+    font-family: 'Lobster', cursive;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    margin-top: 7rem;
+
+    color:  rgb(253, 249, 249);
+}
+
+.about-us-welcome {
+    font-size: 250%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.landing-options {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* flex-direction: row; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.reset-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.landing-button {
+    padding: 1.5rem;
+    font-size: 120%;
+
+    border-radius: 15px;
+
+    box-shadow: 5px 10px;
+    height: fit-content;
+    width: fit-content;
+
+    text-align: center;
+}
+
+.landing-button-selected {
+    animation: landing-button-to-white 1s forwards;
+}
+
+#landing-menu {
+    background-color: #B7B868;
+    /* margin-right: 1rem;
+    margin-left: auto; */
+}
+
+#landing-delivery {
+    background-color: #ebded6;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+#landing-hours {
+    background-color: #e55934;
+    /* margin-left: 1rem;
+    margin-right: auto; */
+}
+
+@keyframes landing-button-to-white {
+    100% {
+        background-color: rgb(253, 249, 249);
+        border: solid #000 3px;
+    }
+}
+
+.landing-top-wrapper {
+    /* margin-bottom: 1; */
+    background-image: url('./landing_bg_TEMP.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 3rem;
+    
+    height: 60vh;
+    /* min-width: 100vw; */
+    /* margin-top: 5rem; */
+}
+
+/******************/
+/* MIDDLE SECTION */
+/******************/
+.landing-middle-wrapper {
+    border-bottom: solid #D9594C 10px;
+    border-top: solid #D9594C 10px;
+    padding: 3rem;
+}
+
+/*****************/
+/* MAP & REVIEWS */
+/*****************/
+.landing-reviews-map {
+    margin: 3rem;
+}
+
+.reviews-map-splitter {
+    display: flex;
+    flex-direction: row;
+}
+
+.map-section-wrapper {
+    margin-right: 3rem;
+}

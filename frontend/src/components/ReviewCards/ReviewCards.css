@@ -1,0 +1,11 @@
+.review-card {
+    background-color: rgb(193, 84, 84);
+    border-radius: 25px;
+    height: min-content;
+    width: min-content;
+}
+
+.review-cards {
+    display: flex;
+    flex-direction: row;
+}
