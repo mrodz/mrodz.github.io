@@ -4,7 +4,7 @@ import Map from "../components/Map/Map";
 import Tooltip from "../components/Tooltip/Tooltip";
 import './HomePage.css';
 import '../medias.css';
-import ReviewCards from "../components/ReviewCards/ReviewCards";
+import ReviewCards from "../components/ReviewCards/ReviewCards.tsx";
 
 function LandingButton(props) {
     const [hovering, setHovering] = useState(false);

@@ -2,6 +2,7 @@
 import glutenFree from './gluten-free.png';
 import vegan from './vegan.png';
 import starred from './stars-color.png'
+import star from './star-symbol.svg'
 
 import './FoodProperties.css';
 import Tooltip from '../Tooltip/Tooltip';
@@ -30,3 +31,4 @@ function FoodProperties(props) {
 }
 
 export default FoodProperties;
+export { star };

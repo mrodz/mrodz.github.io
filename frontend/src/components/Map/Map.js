@@ -8,7 +8,7 @@ export default function Map() {
     return (
         <div className='map-wrapper'>
             <div className='map-title'>
-                Visit Us
+                Come Stop By
             </div>
             <iframe
                 className={`map ${!loaded ? 'map-loading' : ''}`}

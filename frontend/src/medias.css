@@ -1,32 +1,16 @@
-/* @media only screen and (width >= 2500px) {
-    html {
-        font-size: 250%;
-    }
-}
-
-@media only screen and (width >= 1500px) {
-    html {
-        font-size: 150%;
-    }
-    .logo {
-        height: 78px;
-        width: 98px;
-    }
-} */
-
-@media only screen and (min-width: 2000px) {
-    html {
-        font-size: 200%;
+@media only screen and (max-width: 3000px) {
+    .landing-description {
+        font-size: 5rem;
     }
 }
 
 @media only screen and (max-width: 1320px) {
     .landing-description {
-        font-size: 300%;
+        font-size: 3rem;
     }
     
     .landing-button {
-        font-size: 105%;
+        font-size: 1.05rem;
     }
 }
 
