@@ -3,9 +3,60 @@
     border-radius: 25px;
     height: min-content;
     width: min-content;
+}
 
+.review-outside-link {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+}
+
+.review-card-top-wrapper {
+    flex-grow: 1;
+}
+
+.review-card-bottom-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: min-content;
+    text-align: right;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-card-bottom-line {
+    flex-grow: 1;
+    height: 5px;
+    margin-left: .4rem;
+    margin-right: .4rem;
+}
+
+.review-pfp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.review-metadata {
+    display: flex;
+    flex-direction: row;
+}
+
+.review-metadata-info {
+    margin-top: 1rem;
+}
+
+.review-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .review-username {
@@ -41,9 +92,17 @@
     color: #000;
 }
 
+.tripadvisor-bg {
+    background: #000;
+}
+
 .yelp-styling {
     background-color: #fff;
     color: #d32323;
+}
+
+.yelp-bg {
+    background: #d32323;
 }
 
 .review-card {

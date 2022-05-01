@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Map from "../components/Map/Map";
-import Tooltip from "../components/Tooltip/Tooltip";
+import Tooltip from "../components/Tooltip/Tooltip.tsx";
 import './HomePage.css';
 import '../medias.css';
 import ReviewCards from "../components/ReviewCards/ReviewCards.tsx";

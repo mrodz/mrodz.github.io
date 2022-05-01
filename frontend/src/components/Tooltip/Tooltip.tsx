@@ -1,7 +1,19 @@
+import { FC } from 'react';
 import './Tooltip.css';
 
-function Tooltip(props) {
-    const element = props.children.length > 1 ? props.children[0] : props.children;
+interface TooltipProps {
+    children: JSX.Element[] | JSX.Element,
+    text: string,
+    top?: boolean,
+    defaultStyle?: boolean,
+    className?: string,
+    onMouseEnter?: () => void,
+    onMouseLeave?: () => void,
+    style?: React.CSSProperties
+}
+
+const Tooltip: FC<TooltipProps> = (props) => {
+    const element = Array.isArray(props.children) && props.children.length > 1 ? props.children[0] : props.children;
 
     // console.log(props.children);
     const text = props.text;

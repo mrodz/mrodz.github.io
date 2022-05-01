@@ -1,0 +1,50 @@
+[
+    {
+        "username": "Faith T.",
+        "rating": 5,
+        "description": "The cutest little mom and pop Italian spot",
+        "origin": "https://www.yelp.com/biz/comparis-los-angeles?hrid=k2_vU4CRDodHW0DWjW8K-Q&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)",
+        "profileColor": {"r":229,"g":2,"b":212},
+        "date": "12/15/2021"
+    },
+    {
+        "username": "TRWagner",
+        "rating": 5,
+        "description": "The food's the same as it was 40 years ago: fantastic.",
+        "origin": "https://www.tripadvisor.com/ShowUserReviews-g32655-d358091-r545551723-Compari_s_Pizza_Italian-Los_Angeles_California.html",
+        "profileColor": {"r":133,"g":228,"b":244},
+        "date": "12/6/2017"
+    },
+    {
+        "username": "Stephanie B.",
+        "rating": 5,
+        "description": "I have never felt something so real and tasted anything so good.\nIt's perfect for a date or hanging out with friends.",
+        "origin": "https://www.yelp.com/biz/comparis-los-angeles?hrid=YpS8E1VyJJySTWYx78-tUQ&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)",
+        "profileColor": {"r":17,"g":18,"b":182},
+        "date": "11/10/2021"
+    },
+    {
+        "username": "ibaol",
+        "rating": 4,
+        "description": "The service is good and the owners are friendly and welcoming. Great pizza and pasta. Excellent value for your money.",
+        "origin": "https://www.tripadvisor.com/ShowUserReviews-g32655-d358091-r124269235-Compari_s_Pizza_Italian-Los_Angeles_California.html",
+        "profileColor": {"r":52,"g":176,"b":18},
+        "date": "2/7/2012"
+    },
+    {
+        "username": "Nina G.",
+        "rating": 5,
+        "description": "It's a Hidden Gem of City of Angeles.",
+        "origin": "https://www.yelp.com/biz/comparis-los-angeles?hrid=w9x1EQy2S9_RG3hSnjuR6Q&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)",
+        "profileColor": {"r":189,"g":80,"b":203},
+        "date": "7/23/2021"
+    },
+    {
+        "username": "Fred E.",
+        "rating": 4,
+        "description": "Name a better spot.... I\"ll wait!",
+        "origin": "https://www.yelp.com/biz/comparis-los-angeles?hrid=XVV01LdsqR-FuIqUsD6Kzw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)",
+        "profileColor": {"r":147,"g":239,"b":130},
+        "date": "7/22/2020"
+    }
+]
