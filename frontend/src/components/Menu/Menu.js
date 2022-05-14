@@ -15,11 +15,11 @@ function Menu() {
         "Specialties": menuObj.specialties,
         "Pasta": menuObj.pasta,
         "Sandwiches": menuObj.sandwiches,
-        "Specials": menuObj.sandwiches
+        "Specials": menuObj.specials
     };
 
     function MenuOption(props) {
-        const title = props?.title;
+        const title = props.title;
         return (
             <a className={`menu-option ${menuSectionTitle === title ? 'browsing' : ''}`} onClick={() => {
                 const top = document.querySelector('#menu-options');

@@ -4,7 +4,7 @@ import logo from './logo.png';
 import { HashLink as Link } from 'react-router-hash-link';
 import Tooltip from '../Tooltip/Tooltip.tsx';
 import VerticallyCenter from '../VerticallyCenter/VerticallyCenter';
-import AnimatedUnderline from '../AnimatedUnderline/AnimatedUnderline';
+import AnimatedUnderline from '../AnimatedUnderline/AnimatedUnderline.tsx';
 
 function Logo() {
     return (
@@ -27,7 +27,7 @@ export default function GlobalHeader() {
             <VerticallyCenter>
                 <div className='restaurant-name'>
                     <div className='name-items'>
-                        <AnimatedUnderline colors={{ to: '#D9594C', from: '#C3BF6D' }}>
+                        {/* <AnimatedUnderline colors={{ to: '#D9594C', from: '#C3BF6D' }}> */}
                             <Link to={{ pathname: "/", hash: "#" }} className='name-link-to-hub'>
                                 <Tooltip text="Back to home" top={false} defaultStyle>
                                     <span>
@@ -35,7 +35,7 @@ export default function GlobalHeader() {
                                     </span>
                                 </Tooltip>
                             </Link>
-                        </AnimatedUnderline>
+                        {/* </AnimatedUnderline> */}
                         <span data-establishment-text>
                             &nbsp;&bull; Serving our Community Since 1960
                         </span>

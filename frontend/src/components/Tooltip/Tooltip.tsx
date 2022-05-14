@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import './Tooltip.css';
 
 interface TooltipProps {
@@ -9,7 +9,8 @@ interface TooltipProps {
     className?: string,
     onMouseEnter?: () => void,
     onMouseLeave?: () => void,
-    style?: React.CSSProperties
+    style?: React.CSSProperties,
+    as?: JSX.Element
 }
 
 const Tooltip: FC<TooltipProps> = (props) => {
@@ -22,19 +23,42 @@ const Tooltip: FC<TooltipProps> = (props) => {
         fontSize: '1rem'
     };
 
-    return (
-        <div className={`tooltip ${props.top ? 'top-tooltip' : 'bottom-tooltip'}` + props?.className}
-            onMouseEnter={props?.onMouseEnter}
-            onMouseLeave={props?.onMouseLeave}
-            style={props?.style}>
-            <div data-content>
-                {element}
+    const asElement: JSX.Element = props?.as;
+
+    const result: JSX.Element = React.createElement(asElement?.type !== undefined ? asElement.type : React.Fragment, asElement?.props, 
+        (
+            <div className={`tooltip ${props.top ? 'top-tooltip' : 'bottom-tooltip'}` + (props?.className !== undefined ? props.className : '')}
+                onMouseEnter={props?.onMouseEnter}
+                onMouseLeave={props?.onMouseLeave}
+                style={props?.style}>
+                <div data-content>
+                    {element}
+                </div>
+                <div data-text style={props.defaultStyle ? defaultStyle : {}}>
+                    {text}
+                </div>
             </div>
-            <div data-text style={props.defaultStyle ? defaultStyle : {}}>
-                {text}
-            </div>
-        </div>
+        )
     );
+    let a = asElement?.props.children
+    console.log(a);
+
+    return result /*(
+        {result}
+        // <React.Fragment>
+        //     <div className={`tooltip ${props.top ? 'top-tooltip' : 'bottom-tooltip'}` + props?.className}
+        //         onMouseEnter={props?.onMouseEnter}
+        //         onMouseLeave={props?.onMouseLeave}
+        //         style={props?.style}>
+        //         <div data-content>
+        //             {element}
+        //         </div>
+        //         <div data-text style={props.defaultStyle ? defaultStyle : {}}>
+        //             {text}
+        //         </div>
+        //     </div>
+        // </React.Fragment>
+    );*/
 }
 
 export default Tooltip;

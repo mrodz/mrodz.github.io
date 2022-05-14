@@ -10,18 +10,16 @@ function LandingButton(props) {
     const [hovering, setHovering] = useState(false);
     return (
         <Tooltip top={false} text={props?.text}
+            as={<Link to={props?.to} className="reset-link" style={props?.rootStyle !== undefined ? props.rootStyle : {}}/>}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            style={props?.style}>
-            <div id={props?.id} className={`landing-button ${hovering ? 'landing-button-selected' : ''}`}>
-                <Link to={props?.to} className="reset-link">
-                    <span>
-                        {props?.children}
-                    </span>
-                </Link>
+            style={props?.style !== undefined ? props.style : {}}>
+            <div className={`landing-button ${hovering ? 'landing-button-selected' : ''}`} id={props?.id !== undefined ? props.id : ''}>
+                <span>
+                    {props?.children}
+                </span>
             </div>
         </Tooltip>
-
     );
 }
 
@@ -32,9 +30,9 @@ function TopSection() {
                 Open for indoor dining, take out, and delivery.
             </div>
             <nav className="landing-options">
-                <LandingButton to='/menu' text='Click to view our latest menu' id="landing-menu" style={{ marginRight: '1rem', marginLeft: 'auto' }}>Our Menu</LandingButton>
-                <LandingButton to='/delivery' text='Click for more info about deliveries' id="landing-delivery" style={{ marginLeft: 'auto', marginRight: 'auto' }}>Delivery Information</LandingButton>
-                <LandingButton to='/hours' text='Click for our hours of operations' id="landing-hours" style={{ marginLeft: '1rem', marginRight: 'auto' }}>Our Hours</LandingButton>
+                <LandingButton to='/menu' text='Click to view our latest menu' id="landing-menu" rootStyle={{ marginRight: '1rem', marginLeft: 'auto' }}>Our Menu</LandingButton>
+                <LandingButton to='/delivery' text='Click for more info about deliveries' id="landing-delivery" rootStyle={{ marginLeft: 'auto', marginRight: 'auto' }}>Delivery Information</LandingButton>
+                <LandingButton to='/hours' text='Click for our hours of operations' id="landing-hours" rootStyle={{ marginLeft: '1rem', marginRight: 'auto' }}>Our Hours</LandingButton>
             </nav>
         </section>
     );
