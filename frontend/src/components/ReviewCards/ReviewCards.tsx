@@ -4,11 +4,10 @@ import '../../index.d.ts';
 import '../FoodProperties/stars-color.png';
 import { star, emptyStar } from '../FoodProperties/FoodProperties';
 
-
 interface ReviewCardProps {
     id: string,
     review: ReviewTemplate,
-    children?: React.ReactNode,
+    children?: React.ReactNode
 }
 
 interface ProfileColor {
@@ -89,10 +88,12 @@ function invertColor(hex: string, bw: boolean): string {
     if (hex.indexOf('#') === 0) {
         hex = hex.slice(1);
     }
+
     // convert 3-digit hex to 6-digits.
     if (hex.length === 3) {
         hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
     }
+
     if (hex.length !== 6) {
         throw new Error('Invalid HEX color -> ' + hex);
     }
@@ -117,11 +118,20 @@ function rgbToHex(r: number, g: number, b: number): string {
 const reviews: ReviewTemplate[] = require('./reviews.json');
 
 const ProfilePicture: FC<{ review: ReviewTemplate }> = (props) => {
-    let names: string[] = props.review.username.split(/\s+/g);
-    let combined: string = names.length === 1
-        ? names[0].substring(0, 2)
-        : names.reduce((prevName, name) => prevName.charAt(0) + name.charAt(0), '');
+    const username = props.review.username;
 
+    let names: string[] = username.split(/\s+/g);
+    let combined: string;
+
+    if (username === null || username === undefined || username === '') {
+        combined = "N/A"
+    } else {
+        combined = names.length === 1
+            ? names[0].length > 1
+                ? names[0].substring(0, 2)
+                : names[0].charAt(0)
+            : names.reduce((prevName, name) => prevName.charAt(0) + name.charAt(0), '');
+    }
     const { r, g, b } = { ...props.review.profileColor };
     const asHex = rgbToHex(r, g, b);
 

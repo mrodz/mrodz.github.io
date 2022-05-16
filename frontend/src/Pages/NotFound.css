@@ -38,7 +38,7 @@
     animation-name: sideways-bounce;
     animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
     animation-duration: 4s;
-    animation-delay: 0s;
+    animation-delay: 8s;
     animation-iteration-count: infinite;
     animation-fill-mode: none;
 }

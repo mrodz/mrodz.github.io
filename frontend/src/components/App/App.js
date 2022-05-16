@@ -2,7 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import React from 'react';
 import MenuPage from '../../Pages/MenuPage';
-import HomePage from '../../Pages/HomePage';
+import HomePage from '../../Pages/HomePage.tsx';
 import NotFound from '../../Pages/NotFound';
 import GlobalHeader from '../GlobalHeader/GlobalHeader';
 import Footer from "../Footer/Footer";

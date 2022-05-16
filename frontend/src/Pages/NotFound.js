@@ -3,7 +3,6 @@ import AnimatedUnderline from '../components/AnimatedUnderline/AnimatedUnderline
 import './NotFound.css';
 import '../medias.css'
 
-// todo
 export default function NotFound() {
     return (
         <div className="page-404-wrapper">
@@ -12,7 +11,7 @@ export default function NotFound() {
             </div>
             <div className="error-page-content">
                 <div>
-                    It appears this page doesn't exist :(
+                    It appears this page doesn't exist :&#40;
                 </div>
                 <div style={{ marginTop: '1rem' }}>
                     Possible Fixes:

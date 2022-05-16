@@ -2,11 +2,17 @@ import { FC } from 'react';
 import './AnimatedUnderline.css';
 
 interface AnimatedUnderlineProps {
+    /**
+     * The colors of the underline; will form a gradient leading from `from` to `to`
+     */
     colors: {
         from: string,
         to: string
     },
-    children?: JSX.Element | JSX.Element[]
+    /**
+     * Required; it is the child elements.
+     */
+    children?: React.ReactNode
 }
 
 const AnimatedUnderline: FC<AnimatedUnderlineProps> = (props) => {

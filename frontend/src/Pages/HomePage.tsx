@@ -1,16 +1,47 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Map from "../components/Map/Map";
+
+// @ts-ignore
 import Tooltip from "../components/Tooltip/Tooltip.tsx";
-import './HomePage.css';
-import '../medias.css';
+// @ts-ignore
 import ReviewCards from "../components/ReviewCards/ReviewCards.tsx";
 
-function LandingButton(props) {
+import './HomePage.css';
+import '../medias.css';
+
+interface LandingButtonProps {
+    /**
+     * The text in the tooltip that will show when hovered.
+     */
+    text: string,
+    /**
+     * The URL that the button will redirect to.
+     */
+    to: string,
+    /**
+     * Set an HTML ID to this element.
+     */
+    id?: string,
+    /**
+     * Add inline styles to the exterior link.
+     */
+    rootStyle?: React.CSSProperties,
+    /**
+     * Add inline styles to the content inside the tooltip.
+     */
+    style?: React.CSSProperties,
+    /**
+     * Required; it is the child elements.
+     */
+    children?: React.ReactNode
+}
+
+function LandingButton(props: LandingButtonProps): JSX.Element {
     const [hovering, setHovering] = useState(false);
     return (
-        <Tooltip top={false} text={props?.text}
-            as={<Link to={props?.to} className="reset-link" style={props?.rootStyle !== undefined ? props.rootStyle : {}}/>}
+        <Tooltip top={false} text={props.text}
+            as={<Link to={props.to} className="reset-link" style={props?.rootStyle !== undefined ? props.rootStyle : {}}/>}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
             style={props?.style !== undefined ? props.style : {}}>
@@ -23,7 +54,7 @@ function LandingButton(props) {
     );
 }
 
-function TopSection() {
+function TopSection(): JSX.Element {
     return (
         <section className="landing-top-wrapper">
             <div className="landing-description">
@@ -38,7 +69,7 @@ function TopSection() {
     );
 }
 
-function AboutUsSection() {
+function AboutUsSection(): JSX.Element {
     return (
         <section className="landing-middle-wrapper">
             <div className="about-us">
@@ -66,18 +97,7 @@ function AboutUsSection() {
     );
 }
 
-function ReviewsAndMapSection() {
-    // use REST to get Yelp data: https://www.yelp.com/developers
-    // also pull hard-coded reviews from: https://www.restaurantji.com/ca/westchester/comparis-trattoria-pizzeria-/
-    /** @todo */
-    const reviews = [
-        {
-            origin: 'Yelp',
-            review: '4/10',
-            votes: 287
-        }
-    ];
-
+function ReviewsAndMapSection(): JSX.Element {
     return (
         <section className="landing-reviews-map">
             <div className="reviews-map-splitter">
@@ -90,7 +110,7 @@ function ReviewsAndMapSection() {
     );
 }
 
-export default function HomePage() {
+export default function HomePage(): JSX.Element {
     return (
         <div className="landing-wrapper-all" id="">
             <TopSection />
