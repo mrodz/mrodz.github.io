@@ -45,7 +45,7 @@ function LandingButton(props: LandingButtonProps): JSX.Element {
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
             style={props?.style !== undefined ? props.style : {}}>
-            <div className={`landing-button ${hovering ? 'landing-button-selected' : ''}`} id={props?.id !== undefined ? props.id : ''}>
+            <div className={`landing-button${hovering ? ' landing-button-selected' : ''}`} id={props?.id !== undefined ? props.id : ''}>
                 <span>
                     {props?.children}
                 </span>
@@ -61,9 +61,9 @@ function TopSection(): JSX.Element {
                 Open for indoor dining, take out, and delivery.
             </div>
             <nav className="landing-options">
-                <LandingButton to='/menu' text='Click to view our latest menu' id="landing-menu" rootStyle={{ marginRight: '1rem', marginLeft: 'auto' }}>Our Menu</LandingButton>
-                <LandingButton to='/delivery' text='Click for more info about deliveries' id="landing-delivery" rootStyle={{ marginLeft: 'auto', marginRight: 'auto' }}>Delivery Information</LandingButton>
-                <LandingButton to='/hours' text='Click for our hours of operations' id="landing-hours" rootStyle={{ marginLeft: '1rem', marginRight: 'auto' }}>Our Hours</LandingButton>
+                <LandingButton to='/menu' text='Click to view our latest menu' id="landing-menu" rootStyle={{ marginRight: '1rem', marginLeft: 'auto'}}>Our Menu</LandingButton>
+                <LandingButton to='/delivery' text='Click for more info about deliveries' id="landing-delivery" rootStyle={{ marginLeft: 'auto', marginRight: 'auto'}}>Delivery Information</LandingButton>
+                <LandingButton to='/hours' text='Click for our hours of operations' id="landing-hours" rootStyle={{ marginLeft: '1rem', marginRight: 'auto'}}>Our Hours</LandingButton>
             </nav>
         </section>
     );

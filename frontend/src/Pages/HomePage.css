@@ -51,11 +51,22 @@
 
     border-radius: 15px;
 
-    box-shadow: 5px 10px;
     height: fit-content;
     width: fit-content;
 
     text-align: center;
+}
+
+#landing-menu {
+    box-shadow: 5px 10px; 
+}
+
+#landing-delivery {
+    box-shadow: 0px 10px;
+}
+
+#landing-hours {
+    box-shadow: -5px 10px;
 }
 
 .landing-button-selected {
